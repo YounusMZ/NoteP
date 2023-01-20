@@ -7,17 +7,15 @@
     tools:context=".FirstFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id = "@+id/note_recycler"
+        android:id="@+id/note_recycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -25,9 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:translationZ="1dp"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_add_note" />
+        app:srcCompat="@drawable/ic_add_note"
+        android:contentDescription="NEW" />
 </androidx.constraintlayout.widget.ConstraintLayout>

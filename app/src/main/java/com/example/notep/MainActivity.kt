@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val readPermissionCheck = this.checkSelfPermission(storagePermissions[0])
-        val writePermissionCheck = this.checkSelfPermission(storagePermissions[0])
+        val writePermissionCheck = this.checkSelfPermission(storagePermissions[1])
 
         if(readPermissionCheck != PackageManager.PERMISSION_GRANTED && writePermissionCheck != PackageManager.PERMISSION_GRANTED){
             this.requestPermissions(storagePermissions, 1)
